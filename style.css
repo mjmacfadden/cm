@@ -160,6 +160,7 @@ li:last-of-type{
     #header h1{
         display:block;
         font-size:2em;
+        left:0;
         top:0;
         text-align:center;
         position:relative;
@@ -172,14 +173,16 @@ li:last-of-type{
         white-space:nowrap;
         z-index:1;
         visibility:hidden;
+        transition:.2s;
     }
     #nav-expander{
         display:inline-block;
     }
     .open#column-one{
         width:175px;
-        transition: width .1s;
+        transition: width .2s;
         visibility:visible;
+        position:fixed;
     }
     #column-two{
         width:100%;
